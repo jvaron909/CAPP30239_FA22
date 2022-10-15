@@ -1,6 +1,6 @@
 # CAPP30239_FA22
 
-This includes the weekly work developed in the Data Visualization class of the Computational Analysis and Public Policy program at the University of Chicago.
+This repository includes the weekly work developed in the Data Visualization class of the Computational Analysis and Public Policy program at the University of Chicago.
 
 ## Content:
 
