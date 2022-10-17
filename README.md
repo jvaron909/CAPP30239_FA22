@@ -15,4 +15,6 @@ This repository includes the weekly work developed in the Data Visualization cla
 ### week_03:
 
 - D3 introduction
+- Data for the final project
+- Homework about charts using D3
 
