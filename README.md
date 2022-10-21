@@ -18,3 +18,8 @@ This repository includes the weekly work developed in the Data Visualization cla
 - Data for the final project
 - Homework about charts using D3
 
+### week_04:
+
+- D3 time series graphs
+- Homework: Line Chart Exercise
+
