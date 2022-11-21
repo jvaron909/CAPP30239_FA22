@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firts Draft Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+        .svg {
+            font-size: 8px;
+            width: 100%;
+            height: 80vh;
+        }
+        .text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+        .bubbles {
+          stroke-width: 1px;
+          stroke: black;
+          opacity: .8
+        }
+        .bubbles:hover {
+          stroke: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chicago City Council</h1>
+    </div>
+    <div class="container">
+        <h3>Flow diagram for the legislative process taking sponsors' political blocs as departure point </h3>
+        <p>
+            Based on ordinances introduced between May 2019 and November 2022, excluding honorific subjects.
+        </p>
+        <div id="sankey"></div>
+    <p>Source: based on information taken from <a href="https://chicago.legistar.com/">
+        Chicago City Clerk</a>. -- 
+
+            <a href="https://data.oecd.org/interest/long-term-interest-rates.htm#indicator-chart"> Link to the csv file</a>
+        </p>
+    </div>
+    <div class="container">
+        <h3>Average levels of committee activity vs. allocated budget by year</h3>
+        <p>
+            Includes all meetings held between January 2019 and November 2022, along with the pieces of legislation discussed therein.
+        </p>
+        <div id="bubleplot"></div>
+        <p>Source: based on information taken from <a href="https://chicago.legistar.com/">
+            Chicago City Clerk</a>. -- 
+    
+                <a href="https://data.oecd.org/interest/long-term-interest-rates.htm#indicator-chart"> Link to the csv file</a>
+            </p>
+    </div>
+    <div class="container">
+        <h3>Average number of positive votes by category and political bloc of the main sponsor</h3>
+        <p>
+            Includes votes conducted between May 2019 and November 2022 on ordinances introduced by the current administration. The maximum level of approval possible is equal to the number of Aldermen which is 50.
+        </p>
+        
+        <div id="bar-chart"></div>
+        <p>Source: based on information taken from <a href="https://chicago.legistar.com/">
+            Chicago City Clerk</a>. -- 
+    
+                <a href="https://data.oecd.org/interest/long-term-interest-rates.htm#indicator-chart"> Link to the csv file</a>
+            </p>
+    </div>
+</body>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js"
+    integrity="sha512-KK15oKpabNDaLpWinMtNfTqy/V7pzlc2FRG174PfASes7RRx6TAsua8HJdRTKo8+BLvPBKNIkL7kXWcz5HoqqA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="sankey/sankey.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="bars/bar.js"></script>
+<script src="bubleplot/bubleplot.js"></script>
+</html>

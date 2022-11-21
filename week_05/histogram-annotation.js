@@ -14,7 +14,7 @@ Promise.all([
     d3.json('climate-feb.json'),
     d3.json('climate-mar.json')
 ]).then((data) => {      
-    console.log(data)
+    console.log("wwwwwww", data)
 
     const x = d3.scaleLinear()
       .range([margin.left, width - margin.right])
@@ -104,19 +104,19 @@ Promise.all([
       updateChart(i);
   });
 
-  // function annotate(i) {
-  //   let month = d3.select("select").node().options[i].text;
-  //   let temp = d3.min(data[i], d => d.average);
-  //   let str = `The coldest average in <b>${month}</b> was 
-  //     <b>${temp}℉</b>.`
+  function annotate(i) {
+    let month = d3.select("select").node().options[i].text;
+    let temp = d3.min(data[i], d => d.average);
+    let str = `The coldest average in <b>${month}</b> was 
+      <b>${temp}℉</b>.`
 
-  //   svg.append("foreignObject")
-  //     .attr("x", 40)
-  //     .attr("y", 120)
-  //     .attr("width", 120)
-  //     .attr("height", 100)
-  //     .append('xhtml:div')
-  //     .append("p")
-  //     .html(str);
-  // }
+    svg.append("foreignObject")
+      .attr("x", 40)
+      .attr("y", 120)
+      .attr("width", 120)
+      .attr("height", 100)
+      .append('xhtml:div')
+      .append("p")
+      .html(str);
+  }
 });

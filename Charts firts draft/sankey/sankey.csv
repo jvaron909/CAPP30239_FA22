@@ -1,191 +1,92 @@
 source,target,value
-Dept/Agency,Introduced,2
-clerk,Introduced,2
-conservative,Direct Introduction,2
-conservative,Introduced,58
-independent,Introduced,100
-liberal,Direct Introduction,30
-liberal,Introduced,950
+conservative,Introduced,59
+independent,Introduced,99
+liberal,Introduced,968
 liberal,Passed,40
-machine,Direct Introduction,3
 machine,Introduced,178
-mayor,Introduced,98
+mayor,Introduced,93
 misc.,Introduced,183
-progressive,Direct Introduction,4
-progressive,Introduced,220
-Committee on Aviation,Pass,13
-Committee on Aviation,Passed,2
-Committee on Budget and Government Operations,Committee on Pedestrian and Traffic Safety,1
-Committee on Budget and Government Operations,Introduced,2
-Committee on Budget and Government Operations,Pass,94
-Committee on Budget and Government Operations,Passed,9
-Committee on Committees and Rules,Committee on Budget and Government Operations,2
-Committee on Committees and Rules,Committee on Finance,1
-Committee on Committees and Rules,Committee on Housing and Real Estate,1
+progressive,Introduced,219
+Committee on Aviation,Passed,15
+Committee on Budget and Government Operations,Passed,103
 Committee on Committees and Rules,Committee on License and Consumer Protection,9
-Committee on Committees and Rules,Committee on Pedestrian and Traffic Safety,1
-Committee on Committees and Rules,Committee on Public Safety,1
 Committee on Committees and Rules,Committee on Transportation and Public Way,5
-Committee on Committees and Rules,Committee on Workforce Development,1
-Committee on Committees and Rules,Deferred and Published,1
-Committee on Committees and Rules,Fail,1
 Committee on Committees and Rules,Introduced,4
-Committee on Committees and Rules,"Joint Committee: Zoning, Landmarks and Building Standards; License and Consumer Protection",1
-Committee on Committees and Rules,Pass,10
+Committee on Committees and Rules,Passed,10
 Committee on Committees and Rules,Re-Referred,9
-Committee on Contracting Oversight and Equity,Pass,5
-"Committee on Economic, Capital and Technology Development",Pass,81
-"Committee on Economic, Capital and Technology Development",Passed,163
-Committee on Education and Child Development,Pass,2
-Committee on Environmental Protection and Energy,Fail,1
-Committee on Environmental Protection and Energy,Introduced,2
-Committee on Environmental Protection and Energy,Pass,2
-Committee on Environmental Protection and Energy,Passed,1
-Committee on Ethics and Government Oversight,Failed to Pass,1
-Committee on Ethics and Government Oversight,Pass,4
-Committee on Finance,Introduced,2
-Committee on Finance,Joint Committee: Finance; Budget and Government Operations,1
-Committee on Finance,Pass,220
-Committee on Finance,Passed,28
-Committee on Health and Environmental Protection,Committee on Health and Human Relations,3
-Committee on Health and Human Relations,Committee on Health and Environmental Protection,3
-Committee on Health and Human Relations,Pass,8
-Committee on Health and Human Relations,Passed,1
-Committee on Health and Human Relations,Re-Referred,1
-Committee on Housing and Real Estate,Introduced,1
-Committee on Housing and Real Estate,Pass,215
-Committee on Housing and Real Estate,Passed,14
-Committee on Immigrant and Refugee Rights,Passed,1
-Committee on License and Consumer Protection,Committee on Committees and Rules,1
-Committee on License and Consumer Protection,Committee on Contracting Oversight and Equity,1
-Committee on License and Consumer Protection,Deferred and Published,1
-Committee on License and Consumer Protection,Fail,1
+Committee on Contracting Oversight and Equity,Passed,5
+"Committee on Economic, Capital and Technology Development",Passed,194
+Committee on Environmental Protection and Energy,Passed,3
+Committee on Finance,Passed,245
+Committee on Health and Human Relations,Passed,9
+Committee on Housing and Real Estate,Passed,229
 Committee on License and Consumer Protection,Introduced,5
-Committee on License and Consumer Protection,Pass,236
-Committee on License and Consumer Protection,Passed,4
-Committee on Pedestrian and Traffic Safety,Committee on Committees and Rules,1
-Committee on Pedestrian and Traffic Safety,Direct Introduction,1
-Committee on Pedestrian and Traffic Safety,Fail,17
-Committee on Pedestrian and Traffic Safety,Failed to Pass,116
-Committee on Pedestrian and Traffic Safety,Introduced,3
-Committee on Pedestrian and Traffic Safety,Pass,424
-Committee on Pedestrian and Traffic Safety,Passed,7027
-Committee on Pedestrian and Traffic Safety,Placed on File,1
+Committee on License and Consumer Protection,Passed,240
+Committee on Pedestrian and Traffic Safety,Failed to Pass,133
+Committee on Pedestrian and Traffic Safety,Introduced,4
+Committee on Pedestrian and Traffic Safety,Passed,7451
 Committee on Pedestrian and Traffic Safety,Recommended Do Not Pass,3
 Committee on Pedestrian and Traffic Safety,Recommended for Passage,208
-Committee on Public Safety,Deferred and Published,1
 Committee on Public Safety,Introduced,7
-Committee on Public Safety,Pass,11
-Committee on Public Safety,Passed,1
-"Committee on Special Events, Cultural Affairs and Recreation",Pass,20
-Committee on Transportation and Public Way,Committee on Pedestrian and Traffic Safety,1
-Committee on Transportation and Public Way,"Committee on Zoning, Landmarks and Building Standards",1
-Committee on Transportation and Public Way,Introduced,1
-Committee on Transportation and Public Way,Pass,8463
-Committee on Transportation and Public Way,Passed,14
-Committee on Transportation and Public Way,Repealed,1
-Committee on Workforce Development,Pass,12
-Committee on Workforce Development,Passed,5
-Committee on Zoning,Fail,1
-"Committee on Zoning, Landmarks and Building Standards",Deferred and Published,1
-"Committee on Zoning, Landmarks and Building Standards",Fail,2
-"Committee on Zoning, Landmarks and Building Standards",Pass,1085
-"Committee on Zoning, Landmarks and Building Standards",Passed,6
-"Committee on Zoning, Landmarks and Building Standards",Recommended for Passage,1
+Committee on Public Safety,Passed,12
+"Committee on Special Events, Cultural Affairs and Recreation",Passed,20
+Committee on Transportation and Public Way,Passed,8375
+Committee on Workforce Development,Passed,17
+"Committee on Zoning, Landmarks and Building Standards",Passed,1070
 "Committee on Zoning, Landmarks and Building Standards",Repealed,3
 Dept/Agency,Committee on Budget and Government Operations,11
-Dept/Agency,"Committee on Economic, Capital and Technology Development",35
-Dept/Agency,Committee on Ethics and Government Oversight,1
+Dept/Agency,"Committee on Economic, Capital and Technology Development",34
 Dept/Agency,Committee on Finance,6
 Dept/Agency,Committee on Housing and Real Estate,3
-Dept/Agency,Committee on Immigrant and Refugee Rights,1
 Dept/Agency,Committee on License and Consumer Protection,4
-Dept/Agency,Committee on Transportation and Public Way,2
 Dept/Agency,Committee on Workforce Development,4
-Dept/Agency,"Committee on Zoning, Landmarks and Building Standards",6
-Dept/Agency,Pass,5
-Dept/Agency,Passed,2
-Joint Committee: Finance; Budget and Government Operations,Re-Referred,1
-Joint Committee: Finance; Environmental Protection and Energy,Pass,1
-Joint Committee: Finance; License and Consumer Protection,Committee on License and Consumer Protection,1
-Joint Committee: Finance; Public Safety,Introduced,1
-"Joint Committee: Housing and Real Estate; Zoning, Landmarks and Building Standards",Pass,1
-"Joint Committee: Zoning, Landmarks and Building Standards; License and Consumer Protection",Pass,1
-Office of the Mayor,Passed,1
-Special Committee on the Chicago Casino,Pass,1
+Dept/Agency,"Committee on Zoning, Landmarks and Building Standards",4
+Dept/Agency,Passed,7
 clerk,Committee on Committees and Rules,4
-clerk,Committee on Finance,2
 clerk,Committee on Pedestrian and Traffic Safety,3
-clerk,Pass,5
+clerk,Passed,5
 conservative,Committee on Committees and Rules,5
-conservative,"Committee on Economic, Capital and Technology Development",1
 conservative,Committee on License and Consumer Protection,11
 conservative,Committee on Pedestrian and Traffic Safety,350
-conservative,Committee on Transportation and Public Way,330
-conservative,"Committee on Zoning, Landmarks and Building Standards",2
-conservative,Introduced,2
-conservative,Pass,55
-conservative,Passed,1
-conservative,Recommended for Passage,1
+conservative,Committee on Transportation and Public Way,322
+conservative,Passed,56
 independent,Committee on Budget and Government Operations,3
 independent,Committee on Committees and Rules,3
-independent,Committee on Finance,2
-independent,Committee on Housing and Real Estate,1
 independent,Committee on License and Consumer Protection,29
 independent,Committee on Pedestrian and Traffic Safety,285
-independent,Committee on Public Safety,1
-independent,Committee on Transportation and Public Way,1740
+independent,Committee on Transportation and Public Way,1735
 independent,"Committee on Zoning, Landmarks and Building Standards",4
-independent,Failed to Pass,1
 independent,Introduced,14
-independent,Office of the Mayor,1
-independent,Pass,253
-independent,Passed,1
-independent,Recommended for Passage,1
+independent,Passed,254
 liberal,Committee on Budget and Government Operations,19
 liberal,Committee on Committees and Rules,23
-liberal,"Committee on Economic, Capital and Technology Development",6
+liberal,"Committee on Economic, Capital and Technology Development",5
 liberal,Committee on Environmental Protection and Energy,3
-liberal,Committee on Ethics and Government Oversight,2
 liberal,Committee on Finance,7
 liberal,Committee on Health and Human Relations,3
 liberal,Committee on Housing and Real Estate,3
 liberal,Committee on License and Consumer Protection,120
 liberal,Committee on Pedestrian and Traffic Safety,4928
 liberal,Committee on Public Safety,10
-liberal,Committee on Transportation and Public Way,4876
-liberal,Committee on Workforce Development,2
+liberal,Committee on Transportation and Public Way,4818
 liberal,"Committee on Zoning, Landmarks and Building Standards",90
-liberal,Direct Introduction,1
-liberal,Fail,6
+liberal,Failed to Pass,6
 liberal,Introduced,26
-liberal,Joint Committee: Finance; Public Safety,1
-liberal,Pass,711
-liberal,Passed,29
+liberal,Passed,735
 liberal,Recommended for Passage,31
 machine,Committee on Committees and Rules,7
-machine,"Committee on Economic, Capital and Technology Development",1
-machine,Committee on Finance,2
-machine,Committee on Housing and Real Estate,1
 machine,Committee on License and Consumer Protection,26
 machine,Committee on Pedestrian and Traffic Safety,1182
-machine,Committee on Public Safety,2
-machine,Committee on Transportation and Public Way,294
-machine,Committee on Workforce Development,1
+machine,Committee on Transportation and Public Way,287
 machine,"Committee on Zoning, Landmarks and Building Standards",11
 machine,Introduced,8
-machine,Pass,55
-machine,Passed,1
+machine,Passed,56
 machine,Recommended for Passage,5
 mayor,Committee on Aviation,15
 mayor,Committee on Budget and Government Operations,70
-mayor,Committee on Committees and Rules,2
 mayor,Committee on Contracting Oversight and Equity,4
-mayor,"Committee on Economic, Capital and Technology Development",201
-mayor,Committee on Education and Child Development,2
-mayor,Committee on Environmental Protection and Energy,1
-mayor,Committee on Ethics and Government Oversight,2
-mayor,Committee on Finance,230
+mayor,"Committee on Economic, Capital and Technology Development",153
+mayor,Committee on Finance,227
 mayor,Committee on Health and Human Relations,4
 mayor,Committee on Housing and Real Estate,220
 mayor,Committee on License and Consumer Protection,15
@@ -195,31 +96,15 @@ mayor,"Committee on Special Events, Cultural Affairs and Recreation",20
 mayor,Committee on Transportation and Public Way,8
 mayor,Committee on Workforce Development,9
 mayor,"Committee on Zoning, Landmarks and Building Standards",19
-mayor,Introduced,2
-mayor,Joint Committee: Finance; Environmental Protection and Energy,1
-mayor,Joint Committee: Finance; License and Consumer Protection,1
-mayor,"Joint Committee: Housing and Real Estate; Zoning, Landmarks and Building Standards",1
-mayor,Pass,54
-mayor,Passed,8
-mayor,Special Committee on the Chicago Casino,1
-misc.,Committee on Finance,1
-misc.,Committee on Pedestrian and Traffic Safety,1
-misc.,Committee on Zoning,1
-misc.,"Committee on Zoning, Landmarks and Building Standards",941
-misc.,Fail,2
-misc.,Introduced,1
-misc.,Pass,107
-progressive,Committee on Budget and Government Operations,1
-progressive,Committee on Committees and Rules,1
-progressive,Committee on Environmental Protection and Energy,2
+mayor,Passed,62
+misc.,"Committee on Zoning, Landmarks and Building Standards",921
+misc.,Passed,103
 progressive,Committee on Health and Human Relations,3
-progressive,Committee on Housing and Real Estate,1
 progressive,Committee on License and Consumer Protection,34
 progressive,Committee on Pedestrian and Traffic Safety,1044
 progressive,Committee on Public Safety,3
-progressive,Committee on Transportation and Public Way,1226
+progressive,Committee on Transportation and Public Way,1201
 progressive,"Committee on Zoning, Landmarks and Building Standards",24
 progressive,Introduced,5
-progressive,Pass,121
-progressive,Passed,7
+progressive,Passed,128
 progressive,Recommended for Passage,5
