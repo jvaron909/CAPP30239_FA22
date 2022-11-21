@@ -57,7 +57,7 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
       .attr("text-anchor", "end")
       .attr("x", 0)
       .attr("y", -20 )
-      .text("Average number of meetings")
+      .text("Number of meetings")
       .attr("text-anchor", "start")
 
   // Add a scale for bubble size
@@ -200,7 +200,7 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
     svg.append("text")
       .attr('x', xCircle)
       .attr("y", height - 100 +30)
-      .text("Average number of legislative items discussed")
+      .text("Number of legislative items discussed")
       .attr("text-anchor", "middle")
 
     // Add one dot in the legend for each name.
@@ -231,4 +231,4 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
         .style("alignment-baseline", "middle")
         .on("mouseover", highlight)
         .on("mouseleave", noHighlight)
-  })
+  });

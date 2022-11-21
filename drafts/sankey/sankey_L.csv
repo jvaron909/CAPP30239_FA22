@@ -1,0 +1,21 @@
+,source,target,value
+0,independent,Introduced,4
+1,liberal,Introduced,4
+2,progressive,Introduced,2
+0,Committee on Budget and Government Operations,Passed,39
+1,Committee on Committees and Rules,Committee on Transportation and Public Way,1
+2,"Committee on Economic, Capital and Technology Development",Passed,39
+3,Committee on Transportation and Public Way,Passed,25
+4,Dept/Agency,Committee on Budget and Government Operations,1
+5,Dept/Agency,"Committee on Economic, Capital and Technology Development",1
+6,Dept/Agency,Committee on Transportation and Public Way,1
+7,conservative,Committee on Transportation and Public Way,1
+8,liberal,Committee on Committees and Rules,1
+9,liberal,Committee on Transportation and Public Way,16
+10,liberal,Passed,1
+11,machine,Committee on Transportation and Public Way,5
+12,machine,Passed,2
+13,mayor,Committee on Budget and Government Operations,38
+14,mayor,"Committee on Economic, Capital and Technology Development",38
+15,mayor,Passed,2
+16,progressive,Committee on Transportation and Public Way,1

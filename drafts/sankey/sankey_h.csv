@@ -1,0 +1,28 @@
+,source,target,value
+0,conservative,Introduced,1
+1,independent,Introduced,1
+2,liberal,Introduced,12
+3,machine,Introduced,3
+4,mayor,Introduced,5
+5,progressive,Introduced,5
+0,"Committee on Economic, Capital and Technology Development",Passed,50
+1,Committee on Finance,Passed,3
+2,Committee on Transportation and Public Way,Passed,102
+3,Committee on Transportation and Public Way,Repealed,1
+4,"Committee on Zoning, Landmarks and Building Standards",Failed to Pass,1
+5,"Committee on Zoning, Landmarks and Building Standards",Passed,21
+6,Dept/Agency,"Committee on Economic, Capital and Technology Development",1
+7,Dept/Agency,"Committee on Zoning, Landmarks and Building Standards",2
+8,conservative,Committee on Transportation and Public Way,8
+9,independent,Committee on Transportation and Public Way,5
+10,liberal,"Committee on Economic, Capital and Technology Development",1
+11,liberal,Committee on Transportation and Public Way,58
+12,liberal,Introduced,1
+13,liberal,Passed,5
+14,machine,Committee on Transportation and Public Way,7
+15,mayor,"Committee on Economic, Capital and Technology Development",48
+16,mayor,Committee on Finance,3
+17,mayor,Introduced,1
+18,misc.,"Committee on Zoning, Landmarks and Building Standards",20
+19,misc.,Passed,4
+20,progressive,Committee on Transportation and Public Way,25

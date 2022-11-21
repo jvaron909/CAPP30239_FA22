@@ -1,0 +1,90 @@
+,source,target,value
+2,conservative,Introduced,59
+3,independent,Introduced,93
+4,liberal,Introduced,944
+5,liberal,Passed,40
+6,machine,Introduced,176
+7,mayor,Introduced,80
+8,misc.,Introduced,179
+9,progressive,Introduced,207
+0,Committee on Aviation,Passed,4
+3,Committee on Budget and Government Operations,Passed,30
+7,Committee on Committees and Rules,Committee on License and Consumer Protection,9
+16,Committee on Committees and Rules,Passed,10
+17,Committee on Committees and Rules,Re-Referred,8
+18,Committee on Contracting Oversight and Equity,Passed,4
+19,"Committee on Economic, Capital and Technology Development",Passed,123
+24,Committee on Ethics and Government Oversight,Passed,4
+27,Committee on Finance,Passed,197
+30,Committee on Health and Human Relations,Passed,9
+33,Committee on Housing and Real Estate,Passed,109
+39,Committee on License and Consumer Protection,Introduced,5
+40,Committee on License and Consumer Protection,Passed,224
+42,Committee on Pedestrian and Traffic Safety,Failed to Pass,133
+43,Committee on Pedestrian and Traffic Safety,Introduced,4
+44,Committee on Pedestrian and Traffic Safety,Passed,7416
+47,Committee on Pedestrian and Traffic Safety,Recommended for Passage,208
+49,Committee on Public Safety,Introduced,4
+50,Committee on Public Safety,Passed,12
+51,"Committee on Special Events, Cultural Affairs and Recreation",Passed,4
+55,Committee on Transportation and Public Way,Passed,8306
+56,Committee on Workforce Development,Passed,8
+60,"Committee on Zoning, Landmarks and Building Standards",Passed,1069
+63,Dept/Agency,Committee on Budget and Government Operations,6
+64,Dept/Agency,"Committee on Economic, Capital and Technology Development",24
+71,Dept/Agency,"Committee on Zoning, Landmarks and Building Standards",4
+72,Dept/Agency,Passed,4
+79,clerk,Committee on Committees and Rules,4
+82,clerk,Passed,5
+83,conservative,Committee on Committees and Rules,4
+85,conservative,Committee on License and Consumer Protection,11
+86,conservative,Committee on Pedestrian and Traffic Safety,348
+87,conservative,Committee on Transportation and Public Way,320
+90,conservative,Passed,56
+95,independent,Committee on License and Consumer Protection,28
+96,independent,Committee on Pedestrian and Traffic Safety,283
+98,independent,Committee on Transportation and Public Way,1728
+99,independent,"Committee on Zoning, Landmarks and Building Standards",4
+101,independent,Introduced,14
+102,independent,Passed,253
+104,liberal,Committee on Budget and Government Operations,5
+105,liberal,Committee on Committees and Rules,19
+106,liberal,"Committee on Economic, Capital and Technology Development",5
+109,liberal,Committee on Finance,5
+112,liberal,Committee on License and Consumer Protection,116
+113,liberal,Committee on Pedestrian and Traffic Safety,4908
+114,liberal,Committee on Public Safety,9
+115,liberal,Committee on Transportation and Public Way,4780
+117,liberal,"Committee on Zoning, Landmarks and Building Standards",89
+118,liberal,Failed to Pass,6
+119,liberal,Introduced,25
+121,liberal,Passed,726
+122,liberal,Recommended for Passage,31
+123,machine,Committee on Committees and Rules,7
+127,machine,Committee on License and Consumer Protection,20
+128,machine,Committee on Pedestrian and Traffic Safety,1177
+130,machine,Committee on Transportation and Public Way,281
+132,machine,"Committee on Zoning, Landmarks and Building Standards",11
+133,machine,Introduced,7
+134,machine,Passed,52
+135,machine,Recommended for Passage,5
+136,mayor,Committee on Aviation,4
+137,mayor,Committee on Budget and Government Operations,20
+140,mayor,"Committee on Economic, Capital and Technology Development",92
+143,mayor,Committee on Finance,184
+144,mayor,Committee on Health and Human Relations,4
+145,mayor,Committee on Housing and Real Estate,102
+146,mayor,Committee on License and Consumer Protection,13
+147,mayor,Committee on Pedestrian and Traffic Safety,5
+149,mayor,"Committee on Special Events, Cultural Affairs and Recreation",4
+152,mayor,"Committee on Zoning, Landmarks and Building Standards",19
+156,mayor,Passed,43
+161,misc.,"Committee on Zoning, Landmarks and Building Standards",921
+163,misc.,Passed,103
+168,progressive,Committee on License and Consumer Protection,34
+169,progressive,Committee on Pedestrian and Traffic Safety,1038
+171,progressive,Committee on Transportation and Public Way,1195
+172,progressive,"Committee on Zoning, Landmarks and Building Standards",24
+173,progressive,Introduced,5
+174,progressive,Passed,124
+175,progressive,Recommended for Passage,5
