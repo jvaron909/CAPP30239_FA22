@@ -1,9 +1,9 @@
 // (3) IMPORT DATA (this data is from Observable example)
-d3.csv('sankey/sankey_l.csv').then(data => {
+d3.csv('sankey/sankey_le.csv').then(data => {
 
     console.log(data)
 
-    console.log(data);
+    console.log(data.slice(0, 49));
     let chart = SankeyChart({
       links: data
     }, {
@@ -14,7 +14,7 @@ d3.csv('sankey/sankey_l.csv').then(data => {
     });
 
     // (5) APPEND TO PAGE
-    document.getElementById("sankeyl").appendChild(chart);
+    document.getElementById("sankeyle").appendChild(chart);
   });
 
   // (2) PASTE OBSERVABLE FUNCTION
