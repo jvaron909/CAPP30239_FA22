@@ -2,7 +2,7 @@
   //  https://d3-graph-gallery.com/graph/bubble_template.html
 
 // set the dimensions and margins of the graph
-var margin = {top: 40, right: 150, bottom: 50, left: 30},
+var margin = {top: 40, right: 150, bottom: 60, left: 30},
     width = 1000 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
