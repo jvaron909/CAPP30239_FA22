@@ -5,18 +5,10 @@ d3.csv('sankey/sankey_l.csv').then(data => {
 
 
     // (4) CALL FUNCTION WITH OPTIONAL PARAMS
-    // let chart = BeeswarmChart(data, {
-    //     x: d => d.Weight_in_lbs,
-    //     label: "Weight (lbs.) →",
-    //     type: d3.scaleLinear, // try d3.scaleLog
-    //     title: d => `${d.Origin}: ${d.Name}\n${d.Weight_in_lbs.toLocaleString("en")} lbs.`,
-    //     width: 1040,
-    //     marginTop: 50,
-    // });
 
     console.log(data.slice(0, 49));
     let chart = SankeyChart({
-      links: data.slice(0, 183)
+      links: data
     }, {
       nodeGroup: d => d.id.split(/\W/)[0], // take first word for color
       format: (f => d => `${f(d)} TWh`)(d3.format(",.1~f")),
