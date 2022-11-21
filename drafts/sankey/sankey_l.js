@@ -1,5 +1,5 @@
 // (3) IMPORT DATA (this data is from Observable example)
-d3.csv('sankey/sankey_L.csv').then(data => {
+d3.csv('sankey/sankey_l.csv').then(data => {
 
     console.log(data)
 
