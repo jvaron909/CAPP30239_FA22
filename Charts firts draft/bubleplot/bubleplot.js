@@ -77,7 +77,7 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
   // ---------------------------//
 
   // -1- Create a tooltip div that is hidden by default:
-  var tooltip = d3.select("#my_dataviz")
+  var tooltip = d3.select("#bubleplot")
     .append("div")
       .style("opacity", 0)
       .attr("class", "tooltip")
@@ -120,8 +120,8 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
     // reduce opacity of all groups
     d3.selectAll(".bubbles").style("opacity", .05)
     // expect the one that is hovered
-    d3.selectAll(".bubbles " + d.year)
-        .style("opacity", .01) 
+    d3.selectAll(".group_" + d).style("opacity", 1);
+    //d3.selectAll(".bubbles" + d.year).style("opacity", .01) 
   }
   
   // And when it is not hovered anymore
@@ -140,6 +140,7 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
     .data(data)
     .enter()
     .append("circle")
+      //.attr("class", function(d) { return "bubbles " + group_${d.year}})
       .attr("class", function(d) { return "bubbles " + d.year })
       .attr("cx", function (d) { return x(d.budget_prop_year); } )
       .attr("cy", function (d) { return y(d.count); } )
