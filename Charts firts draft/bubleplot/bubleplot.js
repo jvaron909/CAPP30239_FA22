@@ -95,8 +95,9 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
       .style("opacity", 1)
       .html(`Committee: ${d.committee}<br />Year: ${d.year}<br />Projects discussed: ${d.total_agenda}`)
       .style("top", (d.pageY - 30) + "px")
-      .style("left", (d.pageX + 30) + "px");
-      //.style("top", (event.pageY - 10) + "px")
+      .style("left", (d.pageX + 30) + "px")
+      ;
+    
   }
   var moveTooltip = function(d) {
     tooltip
@@ -116,13 +117,16 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
   // ---------------------------//
 
   // What to do when one group is hovered
-  var highlight = function(d){
+  var highlight = function(year){
     // reduce opacity of all groups
     d3.selectAll(".bubbles").style("opacity", .05)
-    // expect the one that is hovered
-    d3.selectAll(".group_" + d).style("opacity", 1);
-    //d3.selectAll(".bubbles" + d.year).style("opacity", .01) 
-  }
+    // except the one that is hovered
+    //console.log(".bubbles " + d.year)
+    d3.selectAll(".group_" + year).style("opacity", 1)
+    console.log(year)
+    //d3.selectAll(".bubbles " + d.year).style("opacity", .01) 
+  
+  };
   
   // And when it is not hovered anymore
   var noHighlight = function(d){
@@ -140,8 +144,8 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
     .data(data)
     .enter()
     .append("circle")
-      //.attr("class", function(d) { return "bubbles " + group_${d.year}})
-      .attr("class", function(d) { return "bubbles " + d.year })
+      .attr("class", function (d) {return "bubbles " + `group_${d.year}`})
+      //.attr("class", function(d) { return "bubbles " + d.year })
       .attr("cx", function (d) { return x(d.budget_prop_year); } )
       .attr("cy", function (d) { return y(d.count); } )
       .attr("r", function (d) { return z(d.total_agenda); } )
@@ -216,8 +220,8 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
         .attr("cy", function(d,i){ return 10 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("r", 7)
         .style("fill", function(d){ return myColor(d)})
-        .on("mouseover", highlight)
-        .on("mouseleave", noHighlight)
+        .on("mouseover", function(e, d) { highlight(d.year)})
+        .on("mouseleave", noHighlight(d.year))
 
     // Add labels beside legend dots
     svg.selectAll("mylabels")
@@ -230,6 +234,6 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
         .text(function(d){ return d})
         .attr("text-anchor", "left")
         .style("alignment-baseline", "middle")
-        .on("mouseover", highlight)
-        .on("mouseleave", noHighlight)
+        .on("mouseover", function(e, d) { highlight(d.year)})
+        .on("mouseleave", noHighlight(d.year))
   });
