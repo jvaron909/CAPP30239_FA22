@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+  
+  <main>
+    <div class="header">
+        <h1>Assessing the Performance of Chicago's City Council</h1>
+    </div>
+
+    <div id="t4" class="introduction">
+    The city council counts on 19 standing committees in charge of discussing specific pieces of legislation according to their subject. Intuitively, the quantity and quality of committees should be related to the nature of the legislation discussed, allowing the specialization of the legislative work. However, according to the Office of Inspector General's 2021 report, at least 7 chairmen were found to have employees, paid with committee’s appropriations, dedicated to non-committee business
+    </div>
+  
+  <section id="c1" class="section-container">
+
+      <div id="bubleplot" class="chart">
+        <h3 class="chart-tittle">Committee Activity vs. Assigned Budget-2019-2022 </h3>
+        <p id= "s1" class = "source" > <strong>Source</strong>: based on information taken from <a href="https://chicago.legistar.com/">
+          Chicago City Clerk</a>. -- 
+      
+            <a href="https://github.com/jvaron909/CAPP30239_FA22/blob/main/Charts%20firts%20draft/sankey/sankey.csv"> Link to the csv file</a>
+        </p>
+      </div>
+      <div id="t1" class="text-container">
+      <strong>
+        Budget allocated to the committees does not account for the variation in legislative activity.
+        <!-- <ul>
+          <li>Some committees did not meet for a whole year, while others have met more than 30 times</li>
+          <li>Seven committees did not discuss more than three projects per year on average</li>
+          <li>Six committees exceeded 100 projects per year on average</li>
+        </ul> -->
+        
+      </strong>    
+      </div>
+      </div>
+    
+    
+  </section>
+
+
+  <section id="c2" class="section-container">
+    
+
+    <div id="t2" class="text-container">
+      <strong> Most of the legislative work is done by few committees</strong>    
+	  </div>
+	  <div id="sankey" class="chart">
+      <h3 class="chart-tittle">Flow Chart of Legislation Introduced by the Current Administration: political blocs of the sponsors &#8594; committee in charge &#8594; status </h3>
+      <p id= "s2" class = "source" > <strong>Source</strong>: based on information taken from <a href="https://chicago.legistar.com/">
+        Chicago City Clerk</a>. -- 
+    
+            <a href="https://github.com/jvaron909/CAPP30239_FA22/blob/main/Charts%20firts%20draft/sankey/sankey.csv"> Link to the csv file</a>. 
+      
+            <strong>Note</strong>: Political blocks were built based on calcification proposed by <a href="https://pols.uic.edu/wp-content/uploads/sites/273/2022/06/City-Council-Buries-its-Rubber-Stamp.pdf"> (Simpson, 2022)</a>
+          </p>
+    </div>
+
+
+    </div>
+    
+  </section>
+
+  <div id="t4" class="">
+    <div id="t4" class="comment">
+      Chicago's structure of governance has been referred to as a strong mayor-weak council system. The City Council reports to the Mayor as she serves as its president and has significant powers such as appointing committee chairs, filling vacancies, and determining its operating budget, among other things. As a result of this imbalance of power, the Council's ability to actively debate the legislation presented is limited
+    </div>
+
+  <section id="c1" class="section-container">
+  
+
+    
+    <div id="bar-chart" class="chart">
+      <h3 class="chart-tittle">Average number of positive votes on legislation introduced by the current administration, by category and major sponsor block</h3>
+      <p id= "s1" class = "source" > <strong>Source</strong>: based on information taken from <a href="https://chicago.legistar.com/">
+        Chicago City Clerk</a>. -- 
+    
+            <a href="https://github.com/jvaron909/CAPP30239_FA22/blob/main/Charts%20firts%20draft/sankey/sankey.csv"> Link to the csv file</a>
+      </p>
+    </div>
+    <div id="t3" class="text-container">
+    <strong>No significant debate/opposition to the legislation discussed regardless of their political supporter</strong>    
+    </div>
+    </div>
+  
+  
+</section>
+
+
+
+
+
+  
+  </main>
+  
+  </body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js"
+    integrity="sha512-KK15oKpabNDaLpWinMtNfTqy/V7pzlc2FRG174PfASes7RRx6TAsua8HJdRTKo8+BLvPBKNIkL7kXWcz5HoqqA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="sankey/sankey.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="bars/bar.js"></script>
+<script src="bubleplot/bubleplot.js"></script>
+</html>

@@ -12,22 +12,25 @@ d3.csv('bars/bars.csv').then(data => {
   keys = data.columns.slice(1)
   const height = 200,
     width = 400,
-    margin = ({top: 20, right: 80, bottom: 20, left: 20});
+    margin = ({top: 10, right: 80, bottom: 35, left: 20});
 
   yAxis = g => g
     .attr("transform", `translate(${margin.left}, 0)`)
     .call(d3.axisLeft(y).ticks(null, "s"))
     .call(g => g.select(".domain").remove())
     .call(g => g.select(".tick:last-of-type text").clone()
-        .attr("x", 3)
-        .attr("text-anchor", "start")
-        .attr("font-weight", "bold")
-        .text(data.y))
+      .attr("x", 3)
+      .attr("text-anchor", "start")
+      .attr("font-weight", "bold")
+      .text(data.y))
+      .attr("font-size", 6)
 
   xAxis = g => g
   .attr("transform", `translate(0,${height - margin.bottom})`)
   .call(d3.axisBottom(x0).tickSizeOuter(0))
   .call(g => g.select(".domain").remove())
+  .attr("font-family", "sans-serif")
+  .attr("font-size", 6)
 
   color = d3.scaleOrdinal()
     .range(["#82c3d3", "#d1848d", "#8697cf", "#c0bc95", "#b092c3", "#cbad8a"])
@@ -51,7 +54,7 @@ d3.csv('bars/bars.csv').then(data => {
       .attr("transform", `translate(${width},0)`)
       .attr("text-anchor", "end")
       .attr("font-family", "sans-serif")
-      .attr("font-size", 8)
+      .attr("font-size", 6)
       .selectAll("g")
       .data(color.domain().slice().reverse())
       .join("g")

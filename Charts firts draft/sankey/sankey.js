@@ -1,19 +1,15 @@
 // (3) IMPORT DATA (this data is from Observable example)
 d3.csv('sankey/sankey.csv').then(data => {
 
-    console.log(data)
-
-
     // (4) CALL FUNCTION WITH OPTIONAL PARAMS
 
-    console.log(data.slice(0, 49));
     let chart = SankeyChart({
       links: data
     }, {
       nodeGroup: d => d.id.split(/\W/)[0], // take first word for color
       format: (f => d => `${f(d)} TWh`)(d3.format(",.1~f")),
-      width: 1040,
-      height: 600
+      width: 1500,
+      height: 1000
     });
 
     // (5) APPEND TO PAGE
@@ -160,7 +156,7 @@ d3.csv('sankey/sankey.csv').then(data => {
 
     if (Tl) svg.append("g")
       .attr("font-family", "sans-serif")
-      .attr("font-size", 10)
+      .attr("font-size", 15)
       .selectAll("text")
       .data(nodes)
       .join("text")

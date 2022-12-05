@@ -1,0 +1,166 @@
+body{
+    background: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    text-align: center;
+    font-size: 30px;
+    background: whitesmoke;
+    width: 50%;
+    position: relative;
+    left: 600px;
+    border: 1px solid black;
+}
+
+.chart-tittle{
+    font-size: 30px;
+}
+
+.section-container {
+    width: 100%;
+    max-width: 2000px;
+    margin: 40px auto;
+    /* border: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcyan;
+}
+
+/* .section-container > #sankey,
+.section-container > .text-container {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.section-container > #bubleplot,
+.section-container > .text-container {
+    width: 60%;
+    box-sizing: border-box;
+} */
+
+.chart,
+.text-container {
+    padding: 20px;   
+}
+
+#s1{
+    position: sticky;
+    font-size: 12px;
+    text-align: left;
+    top: 110%;
+  }
+
+#s2{
+    position: absolute;
+    font-size: 12px;
+    bottom: 0px;
+    text-align: left;
+  }
+
+.section-container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.chart{
+    width: 100%;
+    border: 1px solid black;
+    background: white;
+}
+
+#sankey {
+    width: 100%;
+    height: 90%;
+    position: sticky;
+
+}
+
+#bubleplot {
+    height: 90%;
+    width: 90%;
+    position: static;
+    top: 0;
+}
+
+#bar-chart {
+    height: 50%;
+    width: 83%;
+    position: sticky;
+    bottom: 50;
+}
+
+.section-container > #t1 {
+    width: 90%;
+    position: sticky;
+    top: 0;
+}
+
+.section-container > #t2 {
+    width: 90%;
+    position: sticky;
+    top: 0;
+}
+
+.text-container{
+    position: relative;
+    background: white;
+    top: 0px;
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.introduction{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    padding: 125px;
+
+}
+
+.comment{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    padding: 125px;
+
+}
+
+#t1 {
+    border-right: 1px solid black;
+    color: lightcoral;
+}
+
+#t2 {
+    border-left: 1px solid black;
+    color: lightseagreen;
+}
+
+#t3 {
+    border-right: 1px solid black;
+    color: lightsalmon;
+}
+
+
+li{
+    padding-bottom: 50px;
+}
+
+.tooltip {
+    position: absolute;
+    }
+.svg {
+    font-size: 8px;
+    width: 100%;
+    height: 80vh;
+}
+.bubbles {
+    stroke-width: 1px;
+    stroke: black;
+    opacity: .8
+}
+.bubbles:hover {
+    stroke: black;
+}

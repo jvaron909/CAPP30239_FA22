@@ -32,7 +32,7 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
   console.log(data)
   // Add X axis
   var x = d3.scaleLinear()
-    .domain([0, 2500000])
+    .domain([0, 1500000])
     .range([ 0, width ]);
   svg.append("g")
     .attr("transform", "translate(0," + height + ")")
@@ -220,8 +220,9 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
         .attr("cy", function(d,i){ return 10 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("r", 7)
         .style("fill", function(d){ return myColor(d)})
-        .on("mouseover", function(e, d) { highlight(d.year)})
-        .on("mouseleave", noHighlight(d.year))
+        //.on("mouseover", highlight(d.year))
+        .on("mouseover", function(e, d) { highlight(d)})
+        .on("mouseleave", noHighlight)
 
     // Add labels beside legend dots
     svg.selectAll("mylabels")
@@ -234,6 +235,6 @@ d3.csv('bubleplot/meetings_by_year.csv').then(data => {
         .text(function(d){ return d})
         .attr("text-anchor", "left")
         .style("alignment-baseline", "middle")
-        .on("mouseover", function(e, d) { highlight(d.year)})
-        .on("mouseleave", noHighlight(d.year))
+        .on("mouseover", highlight)
+        .on("mouseleave", noHighlight)
   });
