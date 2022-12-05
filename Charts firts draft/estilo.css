@@ -63,15 +63,14 @@ body{
 }
 
 .chart{
-    width: 100%;
     border: 1px solid black;
     background: white;
 }
 
 #sankey {
-    width: 100%;
     height: 90%;
     position: sticky;
+    width: 150%;
 
 }
 
@@ -84,7 +83,7 @@ body{
 
 #bar-chart {
     height: 50%;
-    width: 83%;
+    width: 100%;
     position: sticky;
     bottom: 50;
 }
@@ -141,6 +140,7 @@ body{
 #t3 {
     border-right: 1px solid black;
     color: lightsalmon;
+    width: 85%;
 }
 
 
