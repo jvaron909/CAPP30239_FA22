@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
   
@@ -14,8 +14,9 @@
         <h1>Assessing the Performance of Chicago's City Council</h1>
     </div>
 
-    <div id="t4" class="introduction">
-    The city Council counts on 19 standing committees in charge of discussing specific pieces of legislation according to their subject. Intuitively, the quantity and quality of committees should be related to the nature of the legislation discussed, allowing the specialization of the legislative work. However, according to the Office of Inspector General's 2021 report, at least 7 chairmen were found to have employees, paid with committee’s appropriations, dedicated to non-committee business
+    <div id="t4" class="naked-text">
+      The governance structure of the city of Chicago has been the subject of criticisms made by different sectors, including journalists (Nitkin, et al. 2022), academics (Simpson, Rosaire Rsie and Gradel 2022), and public officers (Ferguson 2021). Critiques of the local government highlight the lack of checks and balances for local authorities, in particular: the lack of independence of the Council concerning the Mayor, the lack of independent oversight instances, and the lack of specialization and competence in the legislative bodies (Bachrach and Berg 2019).
+    
     </div>
   
   <section id="c1" class="section-container">
@@ -29,15 +30,12 @@
         </p>
       </div>
       <div id="t1" class="text-container">
-      <strong>
-        Budget allocated to the committees does not account for the variation in legislative activity. While 7 committees did not discuss more than 3 projects per year on average, 6 committees exceeded 100 projects per year on average.
-        <!-- <ul>
-          <li>Some committees did not meet for a whole year, while others have met more than 30 times</li>
-          <li>Seven committees did not discuss more than three projects per year on average</li>
-          <li>Six committees exceeded 100 projects per year on average</li>
-        </ul> -->
-        
-      </strong>    
+        <ul>  The city council counts on 19 standing committees discussing specific legislation according to their subject. Intuitively, the quantity and quality of committees should be related to the nature of the legislation discussed, allowing the specialization of the legislative work. However, according to the Office of Inspector General's 2021 report, at least 7 chairmen were found to have employees, paid with committee’s appropriations, dedicated to non-committee business, which includes the provision of services in the chair’s ward (Ferguson 2021). This implicitly suggests that committee chairs face a spending decision between directing resources to legislative work or constituency services. Even if resources are planned to be spent on the former, the political incentives lie with the latter.
+        </ul>
+        <ul>
+          The side chart reveals significant variation in the relation resources-legislative work. A substantial number of committees meet less than five times per year and still have access to similar resources as those that meet more than 10 or 15 times. In fact, 7 of the 19 committees do not discuss more than 3 projects per year on average, while 6 committees exceed 100.
+        </ul>
+
       </div>
       </div>
     
@@ -49,8 +47,13 @@
     
 
     <div id="t2" class="text-container">
-      <strong> Without considering honorary ordinances, 67% of the legislation is proposed by the blocks closest to the mayor. Only 2 committees account for most of the legislative work</strong>    
-	  </div>
+      <ul>
+      Another way of addressing the matter of legislative work is by reviewing the flow of ordinances through the legislative process. A first glance of the process reveals that 2 committees account for most of the legislative work.
+      </ul>
+      <ul>
+        It is also noteworthy that 67% of the legislation is proposed by the blocks closest to the Mayor, and 90% of the ordinances are approved.
+      </ul>
+    </div>
 	  <div id="sankey" class="chart">
       <h3 class="chart-tittle">Flow Chart of Legislation Introduced by the Current Administration: political blocs of the sponsors &#8594; committee in charge &#8594; status </h3>
       <p id= "s2" class = "source" > <strong>Source</strong>: based on information taken from <a href="https://chicago.legistar.com/">
@@ -67,11 +70,6 @@
     
   </section>
 
-  <div id="t4" class="">
-    <div id="t4" class="comment">
-      Chicago's structure of governance has been referred to as a strong mayor-weak council system. The City Council reports to the Mayor as she serves as its president and has significant powers such as appointing committee chairs, filling vacancies, and determining its operating budget, among others. As a result of this imbalance of power, the Council's capacity to actively debate the legislation presented is limited
-    </div>
-
   <section id="c1" class="section-container">
   
 
@@ -85,10 +83,100 @@
       </p>
     </div>
     <div id="t3" class="text-container">
-    <strong>There is no significant debate/opposition to the legislation discussed, regardless of their political supporter. Although the mayor's proposals show the lowest levels of support, it is more than enough to get the legislation passed</strong>    
-    </div>
+      <ul>
+        Chicago's structure of governance has been referred to as a strong mayor-weak council system. The City Council reports to the Mayor as she serves as its president and has significant powers such as appointing committee chairs, filling vacancies, and determining its operating budget, among others. As a result of this imbalance of power, the Council's capacity to actively debate the legislation presented is limited.      </ul>
+      <ul>
+        It is worth noting that the level of support for the ordinances is high, regardless of their political supporter. However, the support for proposals coming from the Mayor is lower than that received by other blocs. Indeed, according to Simpson et al. (2021), it is lower than that obtained by previous mayors Richard M. Daley and Rahm Emanuel. 
+      </ul>    
+      <ul>
+        The fact that the political capital of the current Mayor is historically low, and yet she manages to pass all her legislation is quite telling about the structural limitations of the Council to exercise control over the legislation discussed.      </ul>   
+    
+  </div>
     </div>
     <div id="t4" class="">
+
+</section>
+
+<section id="c4" class="naked-text">
+  
+    <h3 >
+      Data sources and processing
+    </h3>
+
+    <ul>
+      I used two sources of information. The main one is the City Clerk Website (City of Chicago Office of the City Clerk s.f.), where I extracted information about all legislative pieces introduced during the current administration (2019-present) to identify patterns in the legislative process. I also obtained information on the meetings held by the committees, with their respective agendas. Since the information is scattered in different parts of the website, I had to scrape it and organized it using the Selenium package in Python.     </ul> 
+
+    <ul>
+      In a complementary manner, I used the reports made by the Office of the Inspector General on committee spending and employee administration (Ferguson 2021) to approximate the resources available to the committees to fulfill their tasks during the current administration.    </ul>
+
+    <ul>
+      Therefore, I was able to have four different datasets: 1. A data set with all meetings held by all the committees during the current administration, where each observation was related to a committee, a specific date, and the agenda (list) of legislative pieces that was discussed during the session. 2. A data set with all votes held by the current administration where each observation was related with a specific date; a specific record, which is the unique id for legislative pieces; and the vote of all the 50 alderpeople. 3. A data set that described all the steps that a legislative piece introduced during the current administration had overpassed. In this data set observations are related to actions taken over a record (legislative piece) with information about the main sponsor of the record, the committee that carried out the action, the status of the record (which correspond with the last action, for instance: introduced, passed, referred, failed to pass, etc.). 4. A dataset with the information of the assigned budget to each committee in each year between 2019-2022.    </ul> 
+
+    <ul>
+      To better differentiate and identify relations and patterns in legislative work, I constructed two variables based on the attributes of the legislative pieces: block and category. The first one allows to differentiate between political groups inside the city council. Blocs were made according to the classification proposed by Simpson et al . based on the voting patterns exhibited by aldermen during the current administration: the moderate-liberal block, the progressive-socialist block, the conservative block, and the Chicago machine block. In addition, I included a residual category called "independent" to assign aldermen who are not part of the above four.
+    </ul> 
+
+    <ul>
+      The variable "category" was made to have a more granular differentiation between the type of legislative pieces. The original data includes a first classification in this sense: of the 34,425 legislative pieces introduced between May 2019 and November 2022, 68% correspond to ordinances, 13% to resolutions, 11% to claims, and the remaining 8% includes "oaths," "appointments," "reports," "communications," and "orders." Since my analysis focuses primarily on ordinances, which total almost 22,000 during the period analyzed, I have made a more detailed classification based on the title. Thus, my "category" divides the data as follows: 96.4% corresponds to administrative matters, 1% to honorary matters, and 0.5% to legislative matters. 2.1% were not classified.
+    </ul> 
+
+    <h3 >
+      Some caveats
+    </h3>
+    <ul>
+      The bubble plot chart shows the relationship between the resources allocated and the intensity of the work carried out by the Council committees during each year of the current administration. As a proxy for the resources allocated, I used the annual budget allocated by committee between 2019 and 2022, which is different from what each committee spent. However, it is plausible to think that both variables are correlated and should tend to converge, if there is a good planning exercise. For the level of work, I used the annual number of meetings held by each committee and the annual number of legislative pieces discussed on those meetings. 
+    </ul>
+      <ul>
+      Two important caveats must be made on the data. First, the information about the number of projects discussed at the meetings is based on what is published on the city clerk's website, not including those referenced in the attached PDFs. Second, we are taking the total number of items in the agenda related to legislative projects, i.e., if a project got discussed in three different meetings, it is counted three times.
+    </ul> 
+
+    <ul>
+      The Sankey describes the legislative process for ordinances introduced by the current administration, referred to administrative and legislative staff (honorific ordinances were not considered). This flow diagram takes as a starting point the main sponsor's block as an indicator of political support for each ordinance. It is important to note that aldermen are not evenly distributed across blocs. Instead, they are disproportionately grouped in the moderate-liberal bloc (64%), followed by progressive (16%), machine (10%), conservative (6%), and independent (4%). According to Simpson et al (2021). The liberal and the machine blocs are the closest to the mayor's position and are composed primarily of the chairmen of Chicago City Council committees.
+    </ul> 
+    <ul>
+      The chart also includes the committees where the legislation took any action during the current administration, like referring the ordinance, recommending it to pass or to fail, among others. This part was a bit tricky, as there were some ordinances that followed circular flows. Since those ordinances were less than 1% of the total, I decided to leave them out of the chart to avoid unnecessary complications that were neither quantitatively significant nor qualitatively substantial. Finally, the chart includes the status of legislation, which is the latest action taken to date. 
+    </ul> 
+
+    <ul>
+      The grouped bar chart presents the average number of positive votes by category and block of the main sponsor as a measure of the level of agreement with the ordinances debated during the current legislature. I hesitated to include this graph as I found no significant variations between blocks or categories. However, this result speaks to the council's competency gap in opposing debated legislation. 
+    </ul> 
+    <h3 >
+      Final remarks
+    </h3>
+    <ul>
+      The charts effectively describe how the Council and its standing committees are organized to carry out the legislative work and provide enough evidence of suboptimal use of the Council's resources regarding the essential mission of the entity. However, there were other relations I explored with the Sankey and the grouped bar chart related with differences in political blocs at passing legislation. Still, the data doesn’t show any significant trend in this regard.
+    </ul> 
+
+    <ul>
+      The takeaways are not fully conclusive for several reasons. First, while most of the criticisms are related to the government structure, my analysis only considers data from the current administration. However, since the findings go in the direction of the structural criticisms, the conclusions could be taken in a general way, closer to pointing out institutional weakness than specific names of public officers.
+    </ul> 
+    <ul>
+      Second, the analysis only provides one case (Chicago), so it is hard to say if the patterns exhibited are a symptom of the institutional weakness of local government or if they are consistent with the performance that might be observed in cities comparable to Chicago. In any case, the evidence might be taken as a complementary contribution to the analyses made on different fronts that can shed light on how to improve the functioning of local authorities.
+    </ul> 
+    <h3 >
+      References
+    </h3>
+    <ul>
+      <li>
+        Bachrach, E. H., and A. R Berg. 2019. The New Chicago Way: Lessons from Other Big Cities. Chicago: SIU Press.
+      </li>
+      <li>
+        City of Chicago Office of the City Clerk. n.d. Accessed 11 13, 2022. https://chicago.legistar.com/.
+      </li>
+      <li>
+        Ferguson, Joseph M. 2021. Audit of City Council Committee Spending and Employee Administration. Chicago: City of Chicago Office of Inspector General.
+      </li>
+      <li>
+        Nitkin, Alex, Erin Hegarty, Claudia Morell, and A.D. Quig. 2022. WBEZChicago. https://www.wbez.org/stories/chicago-city-council-committees-attendance-records/5f8816f1-1532-42d7-b44f-5c8de1fa7b56.
+      </li>
+      <li>
+        Simpson, Dick, Marco Rosaire Rsie, and Thomas J. Gradel. 2022. City Council Buries its Rubber Stamp. Chicago: University of Illinois at Chicago.
+      </li>
+          
+  </ul>
+</div>
+  </div>
+  <div id="t4" class="">
 
 </section>
 
